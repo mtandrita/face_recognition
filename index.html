@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition Attendance System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📸 Face Recognition Attendance System</h1>
+  </header>
+
+  <main>
+    <section id="add-section">
+      <h2>Add Student</h2>
+      <form id="add-student-form">
+        <input type="text" id="student-name" placeholder="Enter Student Name" required>
+        <input type="file" id="student-photo" accept="image/*" capture="camera" required>
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <section id="students-section">
+      <h2>Registered Students</h2>
+      <ul id="students-list"></ul>
+    </section>
+
+    <section id="attendance-section">
+      <h2>Take Attendance</h2>
+      <video id="webcam" autoplay playsinline></video>
+      <button id="start-attendance">Start Attendance</button>
+      <button id="view-report">View Report</button>
+    </section>
+
+    <section id="report-section" class="hidden">
+      <h2>Attendance Report</h2>
+      <ul id="report-list"></ul>
+      <button id="close-report">Close Report</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Face Recognition Demo by <b>You</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
